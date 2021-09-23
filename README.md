@@ -12,6 +12,7 @@ This is a solution to the [Social proof section challenge on Frontend Mentor](ht
   - [Built with](#built-with)
   - [Continued development](#continued-development)
 - [Author](#author)
+- [Acknowledgment](#acknowledgment)
 
 ## Overview
 
@@ -53,3 +54,6 @@ Areas I want to focus more are: semantic html, css layout, mobile-first workflow
 ## Author
 - Frontend Mentor - [@ichiklaus](https://www.frontendmentor.io/profile/ichiklaus)
 - Twitter - [@ichiklaus](https://www.twitter.com/ichiklaus)
+
+## Acknowledgment
+Shout out to @bartholomej https://gist.github.com/bartholomej/8415655 for this CSS media query cheatsheet.

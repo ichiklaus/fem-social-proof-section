@@ -1,0 +1,448 @@
+/**********************************************************
+* Imports
+**********************************************************/
+/* Import normalize.css for html resets */
+@import url(../node_modules/normalize.css/normalize.css);
+
+/* Import fonts */
+@import url("https://fonts.googleapis.com/css2?family=Spartan:wght@400;500;700&display=swap");
+
+/* Import variables */
+@import url(variables.css);
+/**********************************************************
+* Base styles
+**********************************************************/
+*,
+body {
+  font-family: "Spartan", sans-serif;
+}
+
+body {
+  font-size: 15px;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+.main {
+  width: 100%;
+  height: 100%;
+}
+
+.h3--dark-m {
+  color: var(--very-dark-magenta);
+}
+
+.weight700 {
+  font-weight: 700;
+  font-size: 1.75em;
+}
+
+.p--light-m {
+  color: var(--dark-grayish-magenta);
+}
+
+.weight500 {
+  font-weight: 500;
+}
+
+.lh-15 {
+  line-height: 1.5;
+}
+
+.starred--bg {
+  background-color: var(--light-grayish-magenta);
+}
+
+.starred--border {
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+
+span > .star--margin-10px:not(:nth-last-child(1)) {
+  margin-right: 7px;
+}
+
+.review--color {
+  color: var(--very-dark-magenta);
+}
+
+.review--color.font-w {
+  font-weight: 700;
+}
+
+.bottom {
+  margin-top: 4rem;
+}
+
+.review--bg {
+  background: var(--very-dark-magenta);
+}
+
+.review--border {
+  border-radius: 7px;
+  -webkit-border-radius: 7px;
+  -moz-border-radius: 7px;
+  -ms-border-radius: 7px;
+  -o-border-radius: 7px;
+}
+
+.img--border-radius {
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+
+.buyer {
+  padding: 1rem 1rem 2.5rem 1.5rem;
+  text-align: start;
+}
+
+.font--white {
+  color: var(--white);
+  font-size: 15px;
+}
+
+.font--pink {
+  color: var(--soft-pink);
+}
+
+.f {
+  display: flex;
+}
+
+.f.fdc {
+  flex-direction: column;
+  margin-left: 1rem;
+}
+
+.f.aic {
+  padding: 2em 0 0 1.5em;
+  align-items: center;
+}
+
+.attribution {
+  font-size: 0.6875em;
+  text-align: center;
+}
+
+.attribution a:hover {
+  color: var(--very-dark-magenta);
+  text-decoration: underline;
+}
+
+.attribution > p,
+.attribution > p > a {
+  text-decoration: none;
+  color: var(--dark-grayish-magenta);
+  font-size: 11px;
+}
+
+/**********************************************************
+* Responsive media queries
+**********************************************************/
+/*------------------------------------------
+  Responsive Grid Media Queries - 1280, 1024, 768, 480
+   1280-1024   - desktop (default grid)
+   1024-768    - tablet landscape
+   768-480     - tablet 
+   480-less    - phone landscape & smaller
+--------------------------------------------*/
+@media all and (min-width: 1024px) {
+  .main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .top {
+    display: flex;
+    flex-direction: row;
+    justify-content: stretch;
+    align-items: center;
+    width: 83%;
+  }
+
+  .info {
+    width: 480px;
+    height: auto;
+  }
+
+  .info > h3 {
+    font-size: 3em;
+    margin-bottom: 0;
+  }
+
+  .star {
+    position: relative;
+    left: 1em;
+  }
+
+  .starred-container {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    left: 8rem;
+  }
+
+  .starred {
+    display: flex;
+    align-items: center;
+    width: 480px;
+    height: auto;
+  }
+
+  .starred:not(:nth-last-child(1)) {
+    margin-bottom: 1rem;
+  }
+
+  .starred:nth-child(2) {
+    position: relative;
+    left: 3em;
+  }
+
+  .starred:nth-child(3) {
+    position: relative;
+    left: 6em;
+  }
+
+  .starred-review {
+    position: relative;
+    right: -5em;
+  }
+
+  .bottom {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .review {
+    width: 375px;
+    height: auto;
+  }
+
+  .review:nth-child(2) {
+    position: relative;
+    top: 1rem;
+  }
+
+  .review:nth-child(3) {
+    position: relative;
+    top: 2rem;
+  }
+
+  .review:not(:nth-last-child(1)) {
+    margin-right: 2rem;
+  }
+}
+
+@media all and (min-width: 768px) and (max-width: 1024px) {
+  .main {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .top {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .info {
+    width: auto;
+    height: auto;
+  }
+
+  .center {
+    text-align: center;
+  }
+
+  .center-t {
+    margin-left: 4rem;
+    margin-right: 4rem;
+  }
+
+  .center-p {
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+
+  .bottom {
+    display: flex;
+    flex-direction: column;
+  }
+  .starred {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+    padding-top: 0.85rem;
+  }
+
+  .starred-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 3rem;
+  }
+
+  .starred:not(:nth-last-child(1)) {
+    margin-bottom: 1.5rem;
+  }
+
+  .review {
+    margin: 2rem 1.5rem;
+    width: auto;
+    height: auto;
+  }
+
+  html,
+  body {
+    width: auto;
+    height: auto;
+  }
+}
+
+@media all and (min-width: 480px) and (max-width: 768px) {
+  .main {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .top {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .info {
+    width: auto;
+    height: auto;
+  }
+
+  .center {
+    text-align: center;
+  }
+
+  .center-t {
+    margin-left: 4rem;
+    margin-right: 4rem;
+  }
+
+  .center-p {
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+
+  .bottom {
+    display: flex;
+    flex-direction: column;
+  }
+  .starred {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+    padding-top: 0.85rem;
+  }
+
+  .starred-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 3rem;
+  }
+
+  .starred:not(:nth-last-child(1)) {
+    margin-bottom: 1.5rem;
+  }
+
+  .review {
+    margin: 2rem 1.5rem;
+    width: auto;
+    height: auto;
+  }
+
+  html,
+  body {
+    width: auto;
+    height: auto;
+  }
+}
+
+@media all and (max-width: 480px) {
+  .main {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .top {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .info {
+    width: auto;
+    height: auto;
+  }
+
+  .center {
+    text-align: center;
+  }
+
+  .center-t {
+    margin-left: 4rem;
+    margin-right: 4rem;
+  }
+
+  .center-p {
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+
+  .bottom {
+    display: flex;
+    flex-direction: column;
+  }
+  .starred {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+    padding-top: 0.85rem;
+  }
+
+  .starred-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 3rem;
+  }
+
+  .starred:not(:nth-last-child(1)) {
+    margin-bottom: 1.5rem;
+  }
+
+  .review {
+    margin: 2rem 1.5rem;
+    width: auto;
+    height: auto;
+  }
+
+  html,
+  body {
+    width: auto;
+    height: auto;
+  }
+}

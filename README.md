@@ -24,15 +24,17 @@ Users should be able to:
 ### Screenshot
 
 ![](./Screenshot-desktop.png)
+
 This is the Desktop solution view
 
 ![](./Screenshot-mobile.png)
+
 This is the Mobile solution view
 
 ### Links
 
 - Solution URL: [Github repository](https://github.com/ichiklaus/fem-social-proof-section.git)
-- Live Site URL: [Live site](https://ichiklaus.github.io/fem-social-proof-section)
+- Live Site URL: [Live site](https://ichiklaus-fem-social-proof-section.netlify.app/)
 
 ## My process
 

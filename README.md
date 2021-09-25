@@ -24,13 +24,15 @@ Users should be able to:
 
 ### Screenshot
 
-![](./Screenshot-desktop.png)
-
+<p align="center">
+<img src="./Screenshot-desktop.png">
 This is the Desktop solution view
+</p>
 
-![](./Screenshot-mobile.png)
-
+<p align="center">
+<img src="./Screenshot-mobile.png">
 This is the Mobile solution view
+</p>
 
 ### Links
 
